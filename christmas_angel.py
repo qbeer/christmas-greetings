@@ -1,8 +1,9 @@
-import random
-import json
-import yagmail
-import os
 import argparse
+import json
+import os
+import random
+
+import yagmail
 
 language_defaults = {
     "en": {
