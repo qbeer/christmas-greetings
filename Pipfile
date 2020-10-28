@@ -9,7 +9,5 @@ pylint = "*"
 [requires]
 python_version = "3.8"
 
-[packages]
-
 [packages.yagmail]
 extras = [ "all",]

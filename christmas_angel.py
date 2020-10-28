@@ -4,8 +4,6 @@ import yagmail
 import os
 import argparse
 
-random.seed(42)
-
 language_defaults = {
     "en": {
         "subject": "Christmas Greetings!",
@@ -13,8 +11,8 @@ language_defaults = {
         "encoding": "utf-8"
     },
     "hu": {
-        "subject": "karácsonyi angyal TESZT",
-        "contents": "EZ EGY TESZ ÜZENET! :)",
+        "subject": "karácsonyi angyal",
+        "contents": "A csatolt fájlban találod, hogy kinek vagy az angyala. :)",
         "encoding": "iso-8859-2"
     }
 }
@@ -51,7 +49,6 @@ def run(args):
         angel_name = recipients[ind]["name"]
 
         recipient_name = recipients[rec]["name"]
-        recipient_name = "A VIRGÁCSOK"
 
         message = html.format(angel_name, recipient_name)
 
@@ -66,8 +63,6 @@ def run(args):
 
         os.system('rm template.html')
         os.system('rm out.pdf')
-
-        break
 
 
 parser = argparse.ArgumentParser()
