@@ -37,4 +37,8 @@ sudo apt-get install wkhtmltopdf
 
 If you have everything setup you should just choose the language and send out your emails to your loved ones.
 
+```bash
+python christmas_angel.py --language hu # by default this is set to English
+```
+
 ## @Regards, Alex
