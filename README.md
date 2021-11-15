@@ -8,8 +8,8 @@ Set-up an app password fro Gmail if you have two-step authentication enabled out
 
 ```json
 {
-  "username": "<your-gmail-user-name>",
-  "password": "<your-app-password-or-gmail-password>",
+  "authmail": "<your-gmail-address>",
+  "authpath": "<your-app-oauth2-file-:-it-is-generated-if-the-file-does-not-exist>",
   "recipients": [
     {
       "mail": "recipient@1.com",
@@ -29,16 +29,19 @@ Set-up an app password fro Gmail if you have two-step authentication enabled out
 `yagmail` and you should install the pdf renderer. Currently the setup only works on Linux.
 
 ```bash
-pipenv install
+python3 -m venv christmas
+source christmas/bin/activate
+pip install -r requirements.txt
 sudo apt-get install wkhtmltopdf
 ```
 
 ## Usage
 
-If you have everything setup you should just choose the language and send out your emails to your loved ones.
+If you have everything setup (`config.json`) you should just choose the language and send out your emails to your loved ones.
 
 ```bash
-python christmas_angel.py --language hu # by default this is set to English
+python christmas_angel.py --language hu\ # by default this is set to English
+                          --config_name config.json # required but can be named differently
 ```
 
 ## @Regards, Alex
