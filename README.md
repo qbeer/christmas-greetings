@@ -4,7 +4,7 @@ It is an issue for us all to automate the Christmas angel this year due to COVID
 
 ## Usage
 
-Set-up an app password fro Gmail if you have two-step authentication enabled outherwise just add your password in a `config.json` file:
+Set-up an app password for Gmail if you have two-step authentication enabled outherwise just add your password in a `config.json` file:
 
 ```json
 {
