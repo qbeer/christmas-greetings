@@ -13,7 +13,7 @@ language_defaults = {
         "encoding": "utf-8"
     },
     "hu": {
-        "subject": "Karácsonyi angyal - 2021",
+        "subject": "Karácsonyi angyal - 2022",
         "contents":
         "Szia!\n\nA csatolt PDF-ből kiderül, hogy ki az a szerencsés rokon, akinek te lehetsz a karácsonyi angyala. Ne mondd el senkinek és kérlek ne válaszolj erre az emailre, hacsak nem magadat húztad, ami elméletben lehetetlen!\n\nÁldott Ünnepet!",
         "encoding": "iso-8859-2"
