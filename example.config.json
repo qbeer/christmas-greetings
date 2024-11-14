@@ -1,0 +1,13 @@
+{
+    "authmail": "auth@mail.com",
+    "recipients": [
+    {
+        "name": "Jane Doe",
+        "mail": "jane@doe.com"
+    },
+    {
+        "name": "John Doe",
+        "mail": "john@doe.com"
+    }
+]
+}

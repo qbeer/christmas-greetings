@@ -3,6 +3,7 @@ import json
 import os
 import random
 
+import pdfkit
 import yagmail
 
 language_defaults = {
@@ -21,10 +22,10 @@ language_defaults = {
     "test": {
         "subject": "TESZT angyal - 2022",
         "contents":
-        "Szia!\n\n Ez csak a karácsonyi szokásos teszt üzenet. Itt egy vicc kárpótlásul:\n\n Ferike és Katika karácsonyra ajándékba megkapja a képes Bibliát. Nézegetik, nézegetik, a Madonna a Kisjézussal című képnél megkérdezi Ferike a testvérét: \n- Hol van Jézus apukája? \nKatika elgondolkozva nézi a képet: \n- Biztosan ő fényképezett.\n\n",
+        "Szia!\n\n Ez csak a karácsonyi szokásos teszt üzenet. Itt egy vicc kárpótlásul:\n\n Egy kisfiú nagyon szeretne kapni egy biciklit karácsonyra, ezért levelet ír a Jézuskának: \n\'Kedves Jézuska! Egész évben jó voltam, kérlek, hozz nekem egy biciklit!\' \n Aztán elgondolkodik: Lehet, hogy azért néha nem voltam olyan jó. Új levelet ír: \n \'Kedves Jézuska! Az év nagy részében jó voltam, és ezért szeretnék egy biciklit.\' \nDe még mindig nem elégedett, újrakezdi:\n \'Kedves Jézuska! Tudom, hogy néha rossz voltam, de ha most kapok egy biciklit, megígérem, hogy jó leszek jövőre!\'\nAztán feladja, leteszi a tollat, kimegy a nappaliba, ahol a Betlehem van felállítva, és elveszi a Mária-szobrot. Visszamegy, újabb levelet ír: \n\'Jézus, túsz van nálam. Küldj egy biciklit!\'",
         "encoding": "iso-8859-2"
     }
-}
+}   
 
 
 def run(args):
