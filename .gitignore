@@ -2,4 +2,6 @@ Pipfile.lock
 config.json
 .vscode/
 christmas/
-*.json
+config.json
+
+venv/
